@@ -15,3 +15,4 @@ It's important to give proper credit. Add links to any repo that inspired you or
 
 ## Version
 Ubuntu 16.04.5 LTS
+git version 2.7.4
