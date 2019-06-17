@@ -28,34 +28,37 @@ def get_filters():
     print("Please type city name that you want to investigate. Choose one from the followings.")
     print(city_list)
     city = input()
+    city = city.lower()
     #until get correct choice, let's loop here
     while city not in city_list:
         print("Your type isn't acceptable. Please type city name that you want to investigate. Choose one from the followings.")
         print(city_list)
         city = input()
-   
+        city = city.lower()
     month_list = ["january", "feburary", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december", "all"]
     # TO DO: get user input for month (all, january, february, ... , june)
     print("Please type month that you would like to filter. Enter 'all' if you don't want to filter by month")
     print(month_list)
     month = input()
+    month = month.lower()
     #until get correct choice, let's loop here
     while month not in month_list:
         print("Your type isn't acceptable. Please retry.")
         print(month_list)
         month = input()
-  
+        month = month.lower()
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day_list = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturaday", "sunday", "all"]
     print("Please type day that you would like to filter. Enter 'all' if you don't want to filter by day")
     print(day_list)
     day = input()
+    day = day.lower()
     #utilt get correct choice, let's loop here.
     while day not in day_list:
         print("Your type isn't acceptable. Please retry.")
         print(day_list)
         day = input()
-        
+        day = input()
     print('-'*40)
     return city, month, day
 
